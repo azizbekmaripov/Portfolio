@@ -5,7 +5,7 @@ import React from 'react'
 import { motion } from 'motion/react';
 
 
-const Services = ({ isDarkMode, setIsDarkMode }) => {
+const Services = ({ isDarkMode }) => {
   return (
     <motion.div
       id='services'

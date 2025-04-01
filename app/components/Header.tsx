@@ -15,7 +15,7 @@ const Typewrite = ({ texts }) => {
     }, SWAP_DELAY_IN_MS);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [texts.length]);
 
   return (
     <motion.p

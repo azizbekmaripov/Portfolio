@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = ({isDarkMode, setIsDarkMode}) =>{
+const Footer = ({isDarkMode, }) =>{
   return (
     <div className='mt-20'>
       <div className='text-center'>

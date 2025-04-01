@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from "motion/react";
 import userImage from '../../assets/user-imagee.png'
 
-const About = ({ isDarkMode, setIsDarkMode }) => {
+const About = ({ isDarkMode }) => {
   return (
     <motion.div
       id='about'

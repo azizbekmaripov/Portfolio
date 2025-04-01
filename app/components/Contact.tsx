@@ -54,7 +54,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}>
-        I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
+         {`I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.`}
       </motion.p>
       <motion.form
         onSubmit={onSubmit}
@@ -98,7 +98,7 @@ const Contact = () => {
         ></motion.textarea>
         <motion.button
           type='submit'
-          className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dakr:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
+          className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
           whileHover={{scale:1.05}}
           transition={{duration:0.3}}
         >
