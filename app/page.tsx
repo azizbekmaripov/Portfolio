@@ -1,12 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import Work from "./components/Work";
+import { About, Contact, Footer, Header, Navbar, Services, Work } from "./components";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,12 +24,12 @@ export default function Home() {
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Services isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Work isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Header isDarkMode={isDarkMode} />
+      <About isDarkMode={isDarkMode} />
+      <Services isDarkMode={isDarkMode} />
+      <Work isDarkMode={isDarkMode} />
+      <Contact />
+      <Footer isDarkMode={isDarkMode} />
     </>
   )
 }

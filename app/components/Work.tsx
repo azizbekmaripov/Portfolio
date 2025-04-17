@@ -10,7 +10,7 @@ import { motion } from 'motion/react';
 import { MdOutlineDoneOutline } from "react-icons/md";
 import loading from '../../public/loading.json';
 
-const Work = ({ isDarkMode }) => {
+const Work = ({ isDarkMode }: {isDarkMode:boolean}) => {
   const MotionLink = motion(Link);
   return (
     <motion.div

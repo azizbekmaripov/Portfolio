@@ -6,7 +6,8 @@ import { motion, AnimatePresence } from "motion/react";
 const LETTER_DELAY = 0.025;
 const SWAP_DELAY_IN_MS = 4000;
 
-const Typewrite = ({ texts }) => {
+const Typewrite = ({ texts }: { texts: string[] }) => {
+
   const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
@@ -48,7 +49,7 @@ const Typewrite = ({ texts }) => {
     </motion.p>
   );
 };
-const Header = ({ isDarkMode }) => {
+const Header = ({ isDarkMode }: {isDarkMode: boolean}) => {
   return (
     <div
       className={

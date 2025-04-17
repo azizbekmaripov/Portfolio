@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from 'motion/react';
 
-const Services = ({ isDarkMode }) => {
+const Services = ({ isDarkMode }: {isDarkMode: boolean}) => {
   return (
     <motion.div
       id='services'
