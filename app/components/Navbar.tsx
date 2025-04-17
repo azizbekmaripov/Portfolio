@@ -12,13 +12,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     const handleScroll = () => {
       setIsScroll(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
 
   const navLinks = [
     { name: "Home", href: "#top" },
@@ -27,7 +25,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     { name: "My Work", href: "#work" },
     { name: "Contact me", href: "#contact" },
   ];
-
 
   return (
     <>

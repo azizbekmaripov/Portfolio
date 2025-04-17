@@ -12,7 +12,7 @@ const Contact = () => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", "78c4f09e-7d58-41df-8225-d1bec9c00f47");
-    
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
@@ -54,7 +54,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}>
-         {`I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.`}
+        {`I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.`}
       </motion.p>
       <motion.form
         onSubmit={onSubmit}
@@ -63,7 +63,6 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}>
         <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
-
           <motion.input
             type="text"
             placeholder='Enter your name'
@@ -74,7 +73,6 @@ const Contact = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           />
-
           <motion.input
             type="email"
             placeholder="Enter your email"
@@ -99,8 +97,8 @@ const Contact = () => {
         <motion.button
           type='submit'
           className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
-          whileHover={{scale:1.05}}
-          transition={{duration:0.3}}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
         >
           Submit now
           <Image src={assets.right_arrow_white} alt='' className='w-4' />

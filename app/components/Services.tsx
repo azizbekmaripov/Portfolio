@@ -4,7 +4,6 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from 'motion/react';
 
-
 const Services = ({ isDarkMode }) => {
   return (
     <motion.div
@@ -27,13 +26,11 @@ const Services = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.5 }}>
         My Services
       </motion.h2>
-
       <motion.p
         className='text-center  max-w-2xl mx-auto mt-5 mb-12 font-Poppins text-gray-600 dark:text-white'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}>I am a Frontend Developer from Tashkent, Uzbekistan with 6 months of experience in collaborative projects and freelance development.</motion.p>
-
       <motion.div
         className='grid grid-cols-auto gap-6 my-10'
         initial={{ opacity: 0 }}

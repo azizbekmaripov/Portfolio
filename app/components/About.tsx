@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from "motion/react";
 import userImage from '../../assets/user-imagee.png'
 
-const About = ({ isDarkMode }) => {
+const About = ({ isDarkMode }: {isDarkMode: boolean}) => {
   return (
     <motion.div
       id='about'
@@ -41,8 +41,7 @@ const About = ({ isDarkMode }) => {
           transition={{ duration: 0.6 }}>
           <Image src={userImage} alt='user' className='w-full rounded-3xl' />
           
-        </motion.div>
-        
+        </motion.div> 
         <motion.div
           className='flex-1'
           initial={{ opacity: 0 }}
