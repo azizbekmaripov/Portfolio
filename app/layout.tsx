@@ -28,17 +28,17 @@ export default async function RootLayout({
 
   return (
     <>
-    
-    <Head>
-    <meta name="google-site-verification" content="108d5d5f04b60934" />
-  </Head>
-    <html lang="en" className="scroll-smooth dark">
-      <body
-        className={`${geistMontserrat.className} ${geistPoppins.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
-      >
-        {children}
-      </body>
-    </html>
+
+      <Head>
+        <meta name="google-site-verification" content="108d5d5f04b60934" />
+      </Head>
+      <html lang="en" className="scroll-smooth dark">
+        <body
+          className={`${geistMontserrat.className} ${geistPoppins.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        >
+          {children}
+        </body>
+      </html>
     </>
   );
 }
